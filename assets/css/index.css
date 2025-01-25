@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+:root{
+    --primary-colors:#19192C;
+    --secondary-color:#8EA7E9;
+    --thir-colors:#7286D3;
+    --colors:#D9D9D9;
+    --colors-input:#9E9E9FFA;
+    --colors-button:#FFF2F2;
+    --font-family: "Poppins" ,serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family:"poppins",serif;
+}
+.conteneur{
+    display: flex;
+    padding: 5rem;
+}
+.login-img{
+    flex: 1;
+}
+.formulaire{
+    flex: 1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.images{
+    width: 70rem;
+    height: 50rem;
+}
+h1{
+    font-size: 3rem;
+    color: #19192C
+}
+label{
+    font-size: 2rem;
+}
+input{
+    outline: none;
+    height: 100%;
+    font-size: 2rem;
+}
+.input{
+    display: flex;
+    gap: 2rem;
+    justify-items:center ;
+    align-items: ;
+    border: solid 0.2rem;
+    width: 70%;
+    height: 5rem;
+    color:#9E9E9FFA;
+    border-radius: 1.6rem;
+}
+.img-email{
+    padding: 1.3rem;
+}
+a{
+    font-size: 1.6rem;
+    padding-left: 22rem;
+    color: #8EA7E9;
+}
+button{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 2rem;
+    background-color: #7286D3;
+    padding: 1.3rem;
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.90rem;
+    margin: 4rem;
+    margin-left: 8rem;
+    color: #FFF2F2;
+}
+.avec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+   margin-right: 16rem;
+}
+
+hr{
+width: 11rem;
+height: 2px;
+background-color: #9E9E9FFA;
+}
+p{
+    font-size: 1.90rem;
+}
+.icon{
+    display: flex;
+    margin-top: 4rem;
+    gap: 7rem;
+}
+.icon_image{
+    width: 5rem;
+    height: 5rem;
+    border: solid 1rem;
+    border-radius: 6rem;
+    border-color:#D9D9D9;
+}
+
+
+@media screen and (width<450px) {
+    body{
+        overflow: none;
+    }
+    .conteneur{
+        flex-direction: column;
+    }
+    .images{
+        width: 460px;
+        height: 500px;
+    }
+    input{
+        font-size: 15px;
+        gap: none;
+    }
+    .input{
+        width: 90%;
+        height: 50px;
+    }
+    a{
+        font-size: 12px;
+    }
+    p{
+        font-size: 8px;
+    }
+    hr{
+        width: px;
+        height: 1px;
+    }
+}
